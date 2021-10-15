@@ -1,0 +1,166 @@
+<Project>
+  <Name>Calculadora</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.ClassDiagram" assembly="NClass.DiagramEditor, Version=2.8.0.1, Culture=neutral, PublicKeyToken=null">
+    <Name>Calculadora</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>MainWindow</Name>
+        <Access>Public</Access>
+        <Location left="20" top="148" />
+        <Size width="163" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void OnCalc()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FachadaCalculadora</Name>
+        <Access>Public</Access>
+        <Location left="238" top="132" />
+        <Size width="217" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public double suma(double op1)</Member>
+        <Member type="Method">public double resta(double op1)</Member>
+        <Member type="Method">public double multiplica(double op1)</Member>
+        <Member type="Method">public double divide(double op1)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Suma</Name>
+        <Access>Public</Access>
+        <Location left="533" top="96" />
+        <Size width="175" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public override string Nombre { get; }</Member>
+        <Member type="Method">public override double Calcula()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Resta</Name>
+        <Access>Public</Access>
+        <Location left="533" top="237" />
+        <Size width="175" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public override string Nombre { get; }</Member>
+        <Member type="Method">public override double Calcula()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Multiplica</Name>
+        <Access>Public</Access>
+        <Location left="533" top="372" />
+        <Size width="175" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public override string Nombre { get; }</Member>
+        <Member type="Method">public override double Calcula()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Divide</Name>
+        <Access>Public</Access>
+        <Location left="533" top="519" />
+        <Size width="175" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public override string Nombre { get; }</Member>
+        <Member type="Method">public override double Calcula()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Operador</Name>
+        <Access>Public</Access>
+        <Location left="826" top="305" />
+        <Size width="242" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Operador(double op1, double op2)</Member>
+        <Member type="Property">public abstract string Nombre { get; }</Member>
+        <Member type="Property">public double Op1 { get; set; }</Member>
+        <Member type="Property">public double Op2 { get; set; }</Member>
+        <Member type="Method">public abstract double Calcula()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+    </Entities>
+    <Containers />
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>731</X>
+          <Y>232</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>733</X>
+          <Y>299</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>482</X>
+          <Y>207</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>417</X>
+          <Y>349</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>393</X>
+          <Y>302</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>480</X>
+          <Y>472</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

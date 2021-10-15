@@ -2,13 +2,13 @@
 
 
 namespace AvaloniaCalc.Core.Operaciones {
-    public class Resta: Operacion {
+    public class Resta: Operador {
         public Resta(double op1, double op2)
             :base(op1, op2)
         {
         }
 
-        public override string Operador {
+        public override string Nombre {
             get {
                 return "-";
             }

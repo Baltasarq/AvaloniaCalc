@@ -4,8 +4,8 @@
 namespace AvaloniaCalc.Core {
     
     /// <summary>Clase base para todas las operaciones.</summary>
-    public abstract class Operacion {
-        protected Operacion(double op1, double op2)
+    public abstract class Operador {
+        protected Operador(double op1, double op2)
         {
             this.Op1 = op1;
             this.Op2 = op2;
@@ -18,7 +18,7 @@ namespace AvaloniaCalc.Core {
         public double Op2 { get; set; }
         
         /// <summary>Devuelve el operador como cadena de caracteres.</summary>
-        public abstract string Operador { get; }
+        public abstract string Nombre { get; }
         
         /// <summary>
         /// Realiza la operación indicada. 
@@ -28,7 +28,7 @@ namespace AvaloniaCalc.Core {
         
         public override string ToString()
         {
-            return $"{this.Op1} {this.Operador} {this.Op2}";
+            return $"{this.Op1} {this.Nombre} {this.Op2}";
         }
     }
 }
