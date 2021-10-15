@@ -59,13 +59,13 @@ namespace AvaloniaCalc.UI {
             }
             
             switch ( cbOps.SelectedIndex ) {
-                case 0: res = Calculadora.Suma( op1, op2 );
+                case 0: res = FachadaCalculadora.Suma( op1, op2 );
                     break;
-                case 1: res = Calculadora.Resta( op1, op2 );
+                case 1: res = FachadaCalculadora.Resta( op1, op2 );
                     break;
-                case 2: res = Calculadora.Multiplica( op1, op2 );
+                case 2: res = FachadaCalculadora.Multiplica( op1, op2 );
                     break;
-                case 3: res = Calculadora.Divide( op1, op2 );
+                case 3: res = FachadaCalculadora.Divide( op1, op2 );
                     break;
                 default:
                     new MessageBox( "Operador desconocido" )

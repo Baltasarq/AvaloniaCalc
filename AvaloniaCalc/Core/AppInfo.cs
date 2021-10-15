@@ -4,6 +4,6 @@
 namespace AvaloniaCalc.Core {
     public static class AppInfo {
         public const string Name = "AvaloniaCalc";
-        public const string Version = "1.0 20210929";
+        public const string Version = "1.1 20211015";
     }
 }
