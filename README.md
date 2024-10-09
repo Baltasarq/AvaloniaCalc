@@ -11,7 +11,7 @@ Se trata de un ejemplo exagerado a propósito para poder entender de forma compl
 
 ![Calculadora: diagrama de clases](docs/calculadora-diagrama_clases.png)
 
-Se trata de un diseño básico que solo usa [MVC (separación de lógica de negocio y código de interfaz de usuario)](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador), además del [patrón facade o fachada](https://es.wikipedia.org/wiki/Facade_(patr%C3%B3n_de_dise%C3%B1o%29) para reducir las dependencias entre ambas partes. La aplicación de estos dos patrones es el mínimo diseño en que invertir ante cualquier proyecto.
+Se trata de un diseño básico que solo usa [MVC (separación de lógica de negocio y código de interfaz de usuario)](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador), además del [patrón facade o fachada](https://es.wikipedia.org/wiki/Facade_%28patr%C3%B3n_de_dise%C3%B1o%29) para reducir las dependencias entre ambas partes. La aplicación de estos dos patrones es el mínimo diseño en que invertir ante cualquier proyecto.
 
 ## Construcción y ejecución
 
